@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "Prk360-ECE-Prod"
+        },
+        "location": {
+            "value": "westeurope"
+        },
+        "dnsPrefix": {
+            "value": "Prk360-ECE-Prod-dns"
+        },
+        "agentCount": {
+            "value": 4
+        },
+        "agentVMSize": {
+            "value": "Standard_F8s"
+        },
+        "servicePrincipalClientId": {
+            "value": "68fbce0e-b38d-46c9-96c4-941b9df17cbc"
+        },
+        "servicePrincipalClientSecret": {
+            "value": "71ca6afd-8512-4d82-94e9-36cfd31757c9"
+        },
+        "kubernetesVersion": {
+            "value": "1.13.10"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/1d893bca-c8e5-4e82-91a1-2214e24c8418/resourceGroups/Prk360_ECE_Prod/providers/Microsoft.Network/virtualNetworks/Prk360_ECE_Prod-vnet/subnets/Prk360_Prod_AKS"
+        },
+        "serviceCidr": {
+            "value": "10.241.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.241.1.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "principalId": {
+            "value": "1e05cb48-8c16-4e68-a76e-28e5b78354a8"
+        },
+        "workspaceName": {
+            "value": "Prk360-Prod-Workspace"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/1d893bca-c8e5-4e82-91a1-2214e24c8418/resourceGroups/DefaultResourceGroup-WEU/providers/Microsoft.OperationalInsights/workspaces/Prk360-Prod-Workspace"
+        },
+        "workspaceRegion": {
+            "value": "westeurope"
+        }
+    }
+}
